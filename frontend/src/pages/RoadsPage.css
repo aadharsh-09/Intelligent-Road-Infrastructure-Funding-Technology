@@ -1,0 +1,114 @@
+.roads-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.roads-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.roads-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  color: var(--text-muted);
+  flex: 1;
+  min-width: 220px;
+  max-width: 360px;
+}
+
+.roads-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 12.5px;
+  width: 100%;
+}
+
+.roads-toolbar select {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  font-size: 12.5px;
+  color: var(--text-primary);
+}
+
+.roads-count {
+  margin-left: auto;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.roads-table-panel {
+  overflow: hidden;
+}
+
+.roads-table-scroll {
+  overflow-x: auto;
+}
+
+.roads-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.roads-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--bg-elevated);
+  text-align: left;
+  padding: 11px 16px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.roads-table thead th span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sort-idle {
+  opacity: 0.35;
+}
+
+.roads-table tbody tr {
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+}
+
+.roads-table tbody tr:hover {
+  background: var(--bg-panel-hover);
+}
+
+.roads-table tbody td {
+  padding: 11px 16px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.roads-table-name {
+  color: var(--text-primary);
+  font-weight: 500;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

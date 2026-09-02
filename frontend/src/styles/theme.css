@@ -1,0 +1,101 @@
+:root {
+  /* Base palette - asphalt / civil-engineering survey */
+  --bg: #14171a;
+  --bg-elevated: #191d21;
+  --bg-panel: #1e2226;
+  --bg-panel-hover: #242a2f;
+  --border: #2b3136;
+  --border-strong: #3a424a;
+
+  --text-primary: #edeee9;
+  --text-secondary: #9ba4ac;
+  --text-muted: #6b7480;
+
+  /* Road-marking yellow - primary accent, used sparingly */
+  --accent: #f2b705;
+  --accent-soft: rgba(242, 183, 5, 0.14);
+  --accent-ink: #2a2000;
+
+  /* Priority / condition palette (mirrors road-hazard signage) */
+  --critical: #e2543f;
+  --critical-soft: rgba(226, 84, 63, 0.14);
+  --high: #ef9d2e;
+  --high-soft: rgba(239, 157, 46, 0.14);
+  --medium: #4c9be8;
+  --medium-soft: rgba(76, 155, 232, 0.14);
+  --low: #43b37a;
+  --low-soft: rgba(67, 179, 122, 0.14);
+
+  --font-ui: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 3px;
+  --radius-md: 5px;
+
+  --sidebar-w: 248px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+a {
+  color: inherit;
+}
+
+/* thin scrollbars to match the technical feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
