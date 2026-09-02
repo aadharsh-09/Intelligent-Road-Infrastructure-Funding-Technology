@@ -1,173 +1,238 @@
-# Intelligent Road Infrastructure Funding Technology
+# Intelligent Road Infrastructure Funding Technology (iRIFT)
 
-An automated, data-driven platform designed to optimize public funding, resource allocation, and budget transparency for smart road infrastructure projects.
+An enterprise-grade, automated simulation framework designed to systematically evaluate multi-modal transport asset decay conditions, quantify complex real-time traffic stress matrices, correlate regional socio-demographic indicators, and generate predictive fiscal allocation scenarios for state, municipal, and regional infrastructure planning. 
 
----
-
-## Table of Contents
-1. About the Project
-2. Core Features
-3. Architectural Workflow
-4. Tech Stack and Dependencies
-5. Getting Started
-6. Configuration and Environment Setup
-7. Usage and Verification
-8. API Reference
-9. Roadmap
-10. Contributing
----
-
-## 1. About the Project
-
-Traditional infrastructure funding models often suffer from opacity, delayed resource tracking, and manual auditing loops that slow down development. The Intelligent Road Infrastructure Funding Technology framework is designed to bridge the gap between budgetary governance and engineering realization.
-
-By leveraging data models to evaluate infrastructural degradation alongside regional economic metrics, this platform ensures that every public dollar is channeled precisely where it yields the maximum community and structural impact.
+The application architecture utilizes a decoupled design philosophy, establishing a high-performance, stateless computational backend engine tasked with rigorous multi-criteria optimization logic, interacting seamlessly with a modular web-based visualization frontend layer for dynamic parameter tuning, programmatic policy configuration overrides, and scenario-based planning.
 
 ---
 
-## 2. Core Features
+## 1. System Architecture & Component Topology
 
-### Dynamic Resource Allocation
-Uses algorithmically computed priority coefficients to evaluate which road networks require immediate capital injection based on traffic load, age, and distress.
+The system topology enforces a strict separation of concerns among the data collection, mathematical prioritization, network serving, and presentation layers. Data flows linearly from stochastic or real telemetry collectors, passes through normalization pipelines and matrix constraints, and terminates in deterministic queues optimized for client delivery.
 
-### Financial Ledger Auditing
-Maintains a chronological, tamper-evident pipeline to monitor fund movement from initial allocation down to localized project maintenance milestones.
+```text
+├── data/
+│   ├── raw/                    # Immutable baseline ingestion sets (CSV/Parquet formats)
+│   ├── processed/              # Normalized, scaled data ready for mathematical calculation
+│   └── snapshots/              # Versioned scenario runs for multi-year budget rollbacks
+├── frontend/
+│   ├── src/                    # Source architecture for web visualization dashboards
+│   ├── public/                 # Static assets, map layers, and styling assets
+│   └── package.json            # Client-side node package dependency trees
+├── FRONTEND_API_CONTRACT.md    # Definitive OpenAPI-style payload exchange documentation
+├── algorithm.py                # Core mathematical prioritization engine and normalization matrices
+├── app.py                      # Production ASGI server running decoupled concurrency handlers
+├── export_results.py           # Serialization module producing enterprise-level CSV and JSON blocks
+├── generate_data.py            # Stochastic data simulation engine mapping physical wear equations
+├── requirements.txt            # System dependencies pinned to production-stable builds
+└── secondary_app.py            # Sandbox development deployment layer for isolated feature testing
+```
 
-### Staged Verification Release
-Implements automated validation gateways. Funds are not fully disbursed upfront; instead, they are unlocked sequentially as verifiable milestones are met by engineering modules.
+### Granular Module Deep-Dives
 
-### Predictive Maintenance Forecasting
-Analyzes structural patterns over time to predict future degradation hotspots, allowing local governments to fund proactive structural adjustments before catastrophic failures occur.
+#### Data Generation System (`generate_data.py`)
+This script acts as the structural foundation of the system’s isolated validation pipelines. Instead of trivial randomized arrays, it models structural decay based on mathematical deterioration algorithms. It calculates traffic loading based on simulated industrial versus residential zoning bounds and determines emergency vehicle routing requirements by computing spatial distance calculations from infrastructure coordinates to nearby healthcare facilities.
+
+#### Prioritization Optimization Engine (`algorithm.py`)
+The functional brain of IRIFT. It acts as a stateless, standalone processing program that reads the system file paths, handles feature vector scaling, and applies linear weighting logic. It contains matrix transformation algorithms that translate disparate raw physical dimensions—such as structural indices, daily traffic counts, and accident vectors—into a single metric called the Absolute Priority Index.
+
+#### Enterprise Application Entry Point (`app.py`)
+The primary system gateway. It loads backend configurations, establishes asynchronous endpoint threads, parses incoming HTTP payloads containing user configuration overrides, and re-triggers optimization models in memory before rendering updated schemas to the connected web clients.
+
+#### Reporting & Extraction Framework (`export_results.py`)
+A highly optimized parsing utility that hooks directly into computational memory arrays. Once processing loops terminate, this module checks arrays against specified municipal budget constraints, eliminates segments that fall below funding limits, drops internal math metrics, and transforms data rows into clean, structured file schemas.
+
+#### API Structural Contract (`FRONTEND_API_CONTRACT.md`)
+The system's technical blueprint. It provides explicit schema keys, strict data type declarations, and exact null-value handling criteria. This ensures that independent updates to the backend numerical components do not conflict with the frontend visualization maps.
 
 ---
 
-## 3. Architectural Workflow
+## 2. Advanced Mathematical Optimization Framework
 
-The underlying application flow runs on a three-tier system architecture:
+The system utilizes Multi-Criteria Decision-Making (MCDM) methodologies to calculate priority rankings. Individual raw attributes represent distinct units of measure that cannot be directly combined. The process converts these values into dimensionless utility metrics to ensure accurate comparisons.
 
-1. **Ingestion Layer:** Captures municipal infrastructure reports, live sensor data (where available), and high-level budgetary constraints.
-2. **Analytics & Optimization Engine:** Normalizes the incoming data streams and maps them through priority matrices to generate specific optimization proposals.
-3. **Execution & Reporting Module:** Handles the localized state management, logs financial allocations, and structures visualization matrices for administrators.
+### The Prioritization Formula
 
----
+For any given infrastructure segment $i$, the Absolute Priority Score ($APS_i$) is computed as:
 
-## 4. Tech Stack and Dependencies
+$$APS_i = \sum_{j=1}^{n} (W_j \times \mathcal{N}(C_{i,j}))$$
 
-The core platform is architected using the following environments:
-
-* **Primary Language Environment:** Python 3.10 or higher / Node.js LTS
-* **Data Processing Libraries:** NumPy, Pandas, Scikit-learn
-* **Database & Ledger Persistence:** PostgreSQL / MySQL / SQLite (for local emulation)
-* **Visualization Layer:** Streamlit framework or custom analytical dashboard
+Where:
+* $W_j$ represents the assigned programmatic weight multiplier for criteria $j$, subject to the strict system balancing constraint: $\sum_{j=1}^{n} W_j = 1.0$.
+* $C_{i,j}$ represents the raw telemetry measurement recorded for asset segment $i$ under evaluation factor $j$.
+* $\mathcal{N}$ represents the specific normalization function used to scale input ranges down to a standard value between $0.0$ and $1.0$.
 
 ---
 
-## 5. Getting Started
+## 4. End-to-End Core Data Processing Pipeline
 
-Follow these step-by-step instructions to get a local copy of the infrastructure framework up and running for development and testing.
+```text
+[PHASE 1: INGESTION]  ──► Ingests Raw Telemetry & Geospatial Attributes (`generate_data.py`)
+                                  │
+                                  ▼
+[PHASE 2: PROCESSING] ──► Runs Max-Min Normalization Calculations
+                                  │
+                                  ▼
+[PHASE 3: SCORING]    ──► Multiplies Weight Matrices & Builds Priority Queues (`algorithm.py`)
+                                  │
+                                  ▼
+[PHASE 4: EXPULSION]  ──► Strips Analytical Metadata & Serializes to Disk (`export_results.py`)
+```
 
-### System Prerequisites
-Ensure your local terminal environment has the necessary package managers installed:
-* Python pip (or npm if utilizing a JavaScript-based subsystem extension)
-* Git command line tools
+### Phase 1: Ingestion & Synthesis (`generate_data.py`)
+The pipeline begins by loading or simulating raw physical asset vectors. The module runs calculation loops to generate consistent rows for testing:
+* **Structural Pavement Degradation:** Formats values on a continuous scale mimicking standard pavement condition rules.
+* **Proximity Computations:** Generates coordinate configurations mapping spatial distances between asset nodes and municipal facilities.
+* **Risk/Accident Ingestion:** Compiles discrete incident logs, tracking accident frequency alongside average daily traffic volumes.
 
-### Local Installation Steps
+### Phase 2: Processing & Normalization (`algorithm.py`)
+Raw measurements use different scales and ranges, making direct comparisons inaccurate. The system applies Max-Min scaling logic to normalize these variables:
 
-1. Clone the repository directly from GitHub:
+$$\mathcal{N}(C_{i,j}) = \frac{C_{i,j} - C_{j,\min}}{C_{j,\max} - C_{j,\min}}$$
+
+For indicators where lower numbers mean higher priority (such as a lower structural condition score requiring quicker intervention), the calculation matches an inverse scale:
+
+$$\mathcal{N}(C_{i,j}) = \frac{C_{j,\max} - C_{i,j}}{C_{j,\max} - C_{j,\min}}$$
+
+This ensures that regardless of the original raw measurement range, every factor translates cleanly into a uniform metric where `1.0` represents the highest possible priority for funding.
+
+### Phase 3: Matrix Score Compilation (`algorithm.py`)
+The backend multiplies the normalized metric vectors by the active strategy configuration values. It sums the results to generate an overall ranking score from `0` to `100` for each road element.
+
+### Phase 4: Serialization & Output Export (`export_results.py`)
+The sorted arrays pass to the file generation system. It removes temporary mathematical variables, filters data rows against predefined budget limits, and writes the structured records out to the `data/processed/` directory.
+
+---
+
+## 5. Deployment, Local Setup, & Environment Execution
+
+### System Pre-requisites
+* **Python Runtime Environment:** Pinned to Python Version 3.10 or higher to maintain type-hint compliance.
+* **Core Libraries:** Requires standard numerical processing engines and lightweight routing utilities as outlined in the system requirements file.
+
+### Installation Pipeline
+1. **Clone the remote repository path:**
    ```bash
    git clone https://github.com
-   ```
-
-2. Navigate into the cloned project directory:
-   ```bash
    cd Intelligent-Road-Infrastructure-Funding-Technology
    ```
 
-3. Create an isolated virtual environment (recommended for Python setups):
+2. **Initialize isolated execution environment:**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use: venv\Scripts\activate
    ```
 
-4. Install all essential code packages and framework extensions:
+3. **Activate the local environment context:**
+   * **Linux & macOS Runtimes:**
+     ```bash
+     source venv/bin/activate
+     ```
+   * **Windows Environment (Command Prompt):**
+     ```cmd
+     venv\Scripts\activate.bat
+     ```
+   * **Windows Environment (PowerShell Console):**
+     ```powershell
+     .\venv\Scripts\activate.ps1
+     ```
+
+4. **Install and upgrade environment package blocks:**
    ```bash
+   pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
+### Execution Lifecycles & Workflow Verification
+
+To run the complete framework end-to-end locally, execute the modules in this sequence:
+
+1. **Generate testing datasets:** Initialize fake segment maps with degradation metrics.
+   ```bash
+   python generate_data.py
+   ```
+2. **Verify mathematical prioritization profiles:** Test structural scoring formulas against local test files.
+   ```bash
+   python algorithm.py
+   ```
+3. **Launch primary server application:** Initialize backend engine and serve production endpoints.
+   ```bash
+   python app.py
+   ```
+
 ---
 
-## 6. Configuration and Environment Setup
+## 6. Comprehensive API Contract & Data Protocols
 
-The application looks for localized environment configurations to establish secure system connectivity.
+The backend system implements standard REST design principles to manage state transformations, configuration updates, and output file extractions.
 
-1. Generate a configuration file named `.env` in the root workspace folder.
-2. Populate the file with the following variables based on your local staging needs:
+### High-Level Endpoint Summary
+* `GET /api/v1/segments` — Returns all stored infrastructure records along with their base structural evaluations.
+* `POST /api/v1/allocations/calculate` — Receives custom weight adjustments, recalculates priority positions, and returns updated rank lists.
+* `GET /api/v1/allocations/export` — Tells the export utility to compile and download current strategy configurations.
 
-```env
-ENVIRONMENT=development
-DATABASE_URL=postgresql://user:password@localhost:5432/infra_funding_db
-API_SECRET_KEY=your_generated_secure_development_string_key
-LOG_LEVEL=INFO
-PORT=8501
+### Sample Priority Payload (`GET /api/v1/allocations`)
+
+```json
+[
+  {
+    "segment_id": "GEO_SEG_7291A",
+    "meta": {
+      "road_name": "Main Transit Corridor B",
+      "zone": "District 4",
+      "length_km": 4.285,
+      "functional_class": "Principal Arterial"
+    },
+    "metrics": {
+      "raw_condition_index": 42.10,
+      "average_daily_traffic": 24500,
+      "accident_count_ytd": 14,
+      "flood_risk_index": 8.50,
+      "civic_proximity_score": 3.10
+    },
+    "allocation_outputs": {
+      "priority_score": 89.654,
+      "recommended_funding_usd": 124500.00,
+      "action_required": "Full Overlay & Drainage Retrofit",
+      "funding_status": "Approved - High Priority",
+      "cost_benefit_ratio": 1.42
+    }
+  }
+]
 ```
 
----
+### Recalculation Override Payload (`POST /api/v1/allocations/calculate`)
 
-## 7. Usage and Verification
-
-### Launching the Analytical Engine
-To run the primary optimization platform daemon locally, execute the main driver script:
-
-```bash
-python main.py
+```json
+{
+  "selected_strategy": "custom_policy_override",
+  "runtime_parameters": {
+    "ignore_segments_below_length": 0.5,
+    "apply_budget_cap_usd": 5000000.00
+  },
+  "custom_weights": {
+    "condition_weight": 0.50,
+    "traffic_weight": 0.10,
+    "safety_weight": 0.20,
+    "drainage_weight": 0.10,
+    "civic_weight": 0.10
+  }
+}
 ```
 
-If utilizing the interactive dashboard component, spin up the interface application:
+### Recalculation Response Structure (`POST /api/v1/allocations/calculate`)
 
-```bash
-streamlit run app.py
+```json
+{
+  "transaction_status": "Recalculation Complete",
+  "processed_segments_count": 1420,
+  "execution_time_ms": 34.22,
+  "applied_strategy_profile": "custom_policy_override",
+  "summary_metrics": {
+    "total_allocated_funds_usd": 4895000.00,
+    "unallocated_reserve_usd": 105000.00,
+    "highest_priority_score": 96.42
+  }
+}
 ```
 
-### Running System Validation Tests
-The logic pipelines can be validated using the bundled test assertions. Run the following command to guarantee data processing integrity:
 
-```bash
-pytest tests/
-```
-
----
-
-## 8. API Reference
-
-If executing integrations or extending the engine via web service configurations, the system exposes the following core endpoints:
-
-### GET /api/v1/projects/priority
-* **Description:** Retrieves a prioritized list of road infrastructure sectors sorted by calculated urgency.
-* **Response Format:** JSON array indicating structural health indices and proposed capital budgets.
-
-### POST /api/v1/funding/allocate
-* **Description:** Disburses a verified payment tranche to a targeted roadway infrastructure asset group.
-* **Payload Requirements:** Project ID, allocation amount, and authorization token signatures.
-
----
-
-## 9. Roadmap
-
-* Phase 1: Establish foundational priority math engines and localized file structures.
-* Phase 2: Integrate direct real-world IoT telemetry ingestion capabilities for automated road wear tracking.
-* Phase 3: Implement multi-tenant dashboard profiles separating government analysts, financial auditors, and construction engineers.
-* Phase 4: Build automated smart contract or cryptographic proof-of-work state verification for cross-department validation.
-
----
-
-## 10. Contributing
-
-Contributions are vital to ensuring the growth of modern infrastructure logistics tools. To contribute:
-
-1. Fork the project workspace.
-2. Branch out your updates (`git checkout -b feature/OptimizedAllocationLogic`).
-3. Commit your precise code refactors (`git commit -m 'Refactored allocation weight math'`).
-4. Push your local branch changes (`git push origin feature/OptimizedAllocationLogic`).
-5. Generate an explicit Pull Request against the main branch detailing your enhancements.
-
----
