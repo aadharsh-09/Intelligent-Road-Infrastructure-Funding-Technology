@@ -39,6 +39,12 @@ def root() -> dict:
     }
 
 
+@app.get("/health")
+def health() -> dict:
+    return {
+        "status": "ok"
+    }
+
 @app.get("/roads")
 def roads(
     strategy: str = Query(default="balanced", pattern="^(balanced|safety_first|flood_first|traffic_first)$"),
