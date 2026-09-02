@@ -1,0 +1,247 @@
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 9, 10, 0.55);
+  backdrop-filter: blur(1px);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawer {
+  width: 420px;
+  max-width: 92vw;
+  height: 100%;
+  background: var(--bg-elevated);
+  border-left: 1px solid var(--border-strong);
+  overflow-y: auto;
+  padding: 22px 22px 40px;
+  animation: drawer-in 0.18s ease-out;
+}
+
+@keyframes drawer-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.drawer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.drawer-id {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.drawer-title {
+  font-size: 17px;
+  margin-top: 3px;
+  color: var(--text-primary);
+}
+
+.drawer-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.drawer-close {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.drawer-close:hover {
+  color: var(--text-primary);
+  border-color: var(--accent);
+}
+
+.drawer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.drawer-stat-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.drawer-stat {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.drawer-stat span {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.drawer-stat strong {
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.drawer-section {
+  margin-top: 20px;
+}
+
+.drawer-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.drawer-loading {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.drawer-action {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 11px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.drawer-action-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.drawer-action-reason {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.factor-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.factor-bar-row {
+  display: grid;
+  grid-template-columns: 92px 1fr 34px;
+  align-items: center;
+  gap: 10px;
+}
+
+.factor-bar-label {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.factor-bar-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.factor-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.factor-bar-value {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.drawer-explanation {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.drawer-explanation li {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.drawer-explanation-empty {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.drawer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.detail-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 12px;
+}
+
+.detail-field span {
+  color: var(--text-muted);
+}
+
+.detail-field strong {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 12px;
+}

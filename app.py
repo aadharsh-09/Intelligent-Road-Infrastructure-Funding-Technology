@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from algorithm import explain_road, load_roads, optimize_budget, score_roads
@@ -10,6 +11,14 @@ app = FastAPI(
     title="Road Maintenance Decision Support API",
     description="Prioritizes road maintenance and allocates limited repair funds.",
     version="0.1.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
