@@ -1,0 +1,101 @@
+road_id,road_name,area,zone,ward,latitude,longitude,road_type,pavement_type,length_km,road_age_years,years_since_last_repair,potholes_per_km,avg_pothole_severity_1_5,crack_percent,surface_distress_index,roughness_iri,drainage_score_0_100,waterlogging_days_per_year,traffic_pcu_per_day,heavy_vehicle_percent,bus_route,near_school_hospital,accident_count_3y,complaints_90d,flood_vulnerability_0_100,civic_importance_0_100
+CHN-RD-001,Royapuram Market Road,Royapuram,5,49,13.101297,80.31186,interior,bituminous,1.19,5,5,6,1.4,33.1,24.7,3.6,37,11,4179,3.9,0,0,1,10,44.4,40
+CHN-RD-002,Anna Nagar 1st Street,Anna Nagar,8,103,13.076611,80.22582,interior,bituminous,1.54,9,0,1,1,12.2,40.0,4.0,73,5,10027,19.7,0,1,0,9,22.1,87
+CHN-RD-003,Perambur Canal Bank Road,Perambur,6,70,13.129892,80.230024,bus_route,bituminous,4.27,9,8,7,1.5,30.0,59.5,4.2,75,5,21665,19.6,1,1,6,24,16.0,100
+CHN-RD-004,Mylapore Market Road,Mylapore,9,122,13.026466,80.257394,interior,bituminous,2.11,3,0,0,1,18.3,15.3,3.1,90,1,4296,8.6,0,0,0,0,7.7,54
+CHN-RD-005,Nungambakkam High Road,Nungambakkam,9,111,13.056396,80.226992,arterial,bituminous,2.57,4,2,0,3.2,11.6,28.1,3.4,75,2,40016,15.1,1,1,2,0,21.9,70
+CHN-RD-006,Velachery Main Road,Velachery,13,176,12.960026,80.203831,interior,bituminous,2.25,9,8,7,2.3,19.9,43.0,3.9,88,3,12438,3.7,0,1,3,18,12.3,95
+CHN-RD-007,Kodambakkam High Road,Kodambakkam,10,131,13.041297,80.226806,interior,bituminous,1.09,5,5,6,1.2,24.2,27.8,4.6,84,6,11855,9.3,0,0,2,11,11.4,63
+CHN-RD-008,Velachery Canal Bank Road,Velachery,13,178,12.983463,80.208273,interior,bituminous,3.54,15,8,11,3.9,41.5,58.5,6.9,58,3,4104,8.2,0,0,4,15,32.5,56
+CHN-RD-009,T Nagar Market Road,T Nagar,10,136,13.031153,80.241883,bus_route,bituminous,1.84,16,8,11,2.2,37.7,67.2,5.1,45,10,21727,21.5,1,0,3,23,45.0,94
+CHN-RD-010,Tambaram 2nd Avenue,Tambaram,15,200,12.910629,80.113613,interior,bituminous,1.93,3,0,5,1,20.0,34.6,3.7,24,13,10008,14.2,0,1,6,16,70.4,100
+CHN-RD-011,Anna Nagar School Road,Anna Nagar,8,103,13.067348,80.194809,bus_route,cement_concrete,2.76,15,10,20,5,47.8,99.4,9.2,23,13,51122,23.2,1,0,10,63,57.7,76
+CHN-RD-012,Velachery Link Road,Velachery,13,177,12.958492,80.229216,interior,bituminous,2.36,5,3,5,1.7,13.4,31.0,4.1,90,0,4588,12.6,0,0,0,8,12.4,40
+CHN-RD-013,Tambaram Canal Bank Road,Tambaram,15,199,12.940713,80.086152,arterial,paver_block,3.1,4,3,2,2.2,29.7,37.4,3.1,67,7,43079,14.1,0,0,4,17,27.0,85
+CHN-RD-014,Velachery High Road,Velachery,13,178,12.990002,80.220956,bus_route,bituminous,5.08,12,5,7,1.7,39.3,68.9,4.9,89,3,25578,12.5,1,0,0,16,9.8,62
+CHN-RD-015,Mylapore 2nd Avenue,Mylapore,9,124,13.039799,80.273993,interior,bituminous,0.79,14,10,9,3.4,39.4,60.4,4.2,75,0,8711,1.7,0,0,4,21,20.2,41
+CHN-RD-016,Adyar Canal Bank Road,Adyar,13,173,13.021729,80.243969,bus_route,bituminous,1.65,8,7,6,1.2,17.8,39.7,5.1,55,3,47846,27.3,1,0,2,22,25.1,86
+CHN-RD-017,Thiruvanmiyur High Road,Thiruvanmiyur,13,178,12.97293,80.256889,bus_route,bituminous,7.2,15,9,6,2.6,40.0,64.1,5.2,88,7,47223,13.6,1,1,5,8,13.6,99
+CHN-RD-018,Adyar 1st Street,Adyar,13,174,12.996599,80.25529,interior,bituminous,2.22,14,0,8,1.4,10.8,37.4,4.3,77,0,5888,6.2,0,0,5,26,13.3,89
+CHN-RD-019,Mylapore Station Road,Mylapore,9,122,13.042865,80.253575,bus_route,paver_block,6.54,5,4,7,3.5,22.2,37.1,3.2,71,0,43822,15.0,1,1,6,10,14.0,73
+CHN-RD-020,Adyar 2nd Avenue,Adyar,13,175,13.013085,80.274094,bus_route,bituminous,6.03,8,3,3,1,17.6,30.4,2.0,65,1,33633,5.8,1,1,0,5,15.5,66
+CHN-RD-021,Nungambakkam School Road,Nungambakkam,9,109,13.065317,80.259257,interior,bituminous,3.22,8,1,3,1.8,23.9,23.3,4.7,76,0,13922,14.2,0,0,2,0,11.0,78
+CHN-RD-022,Kodambakkam 1st Street,Kodambakkam,10,131,13.043089,80.222131,arterial,bituminous,5.05,11,3,5,1.2,32.1,36.9,5.7,77,6,45981,19.6,0,0,2,21,18.7,21
+CHN-RD-023,Adyar Link Road,Adyar,13,173,12.99649,80.257031,bus_route,bituminous,6.26,3,2,1,2.1,16.5,13.5,4.3,76,5,33945,14.1,1,1,4,3,24.7,99
+CHN-RD-024,Kodambakkam High Road,Kodambakkam,10,131,13.048825,80.210167,bus_route,bituminous,3.28,12,2,3,2.7,19.7,55.8,6.2,30,6,26295,18.8,0,1,2,8,45.6,95
+CHN-RD-025,T Nagar Link Road,T Nagar,10,135,13.030057,80.218802,interior,bituminous,3.62,3,1,5,1,10.5,18.2,2.6,91,7,4440,2.0,0,1,0,14,11.5,70
+CHN-RD-026,Thiruvanmiyur Station Road,Thiruvanmiyur,13,180,12.978447,80.25759,bus_route,bituminous,3.23,10,7,5,3.3,31.9,34.0,2.8,64,3,35337,21.3,1,0,4,9,25.7,56
+CHN-RD-027,Kodambakkam Link Road,Kodambakkam,10,133,13.050092,80.236813,interior,paver_block,0.49,16,12,22,4.5,56.1,73.7,7.6,39,12,12391,5.8,0,0,6,65,52.3,76
+CHN-RD-028,Thiruvanmiyur Station Road,Thiruvanmiyur,13,180,12.983413,80.244958,interior,bituminous,2.66,6,2,6,2.2,19.3,33.8,4.4,80,8,9244,15.4,0,1,0,30,23.2,88
+CHN-RD-029,Velachery Station Road,Velachery,13,176,12.974044,80.207907,collector,bituminous,5.69,4,0,2,1.4,17.2,29.8,2.8,62,8,16841,15.9,0,0,0,13,37.0,73
+CHN-RD-030,Perambur 1st Street,Perambur,6,71,13.116787,80.245416,interior,bituminous,3.33,9,6,8,3.6,42.3,65.8,5.5,19,28,8068,1.5,0,0,4,29,87.4,61
+CHN-RD-031,Mylapore School Road,Mylapore,9,124,13.018791,80.263528,bus_route,bituminous,3.82,5,3,6,2.9,10.8,20.5,3.4,64,1,50918,10.6,0,0,7,17,28.9,63
+CHN-RD-032,Kodambakkam 2nd Avenue,Kodambakkam,10,132,13.047894,80.212741,interior,bituminous,2.83,16,8,14,3.7,34.5,53.9,6.1,95,4,3088,7.2,0,0,3,35,1.6,61
+CHN-RD-033,Perambur 2nd Avenue,Perambur,6,70,13.133431,80.221772,bus_route,bituminous,5.16,13,9,9,3.2,30.6,51.3,3.9,29,19,50615,25.3,1,1,4,34,67.0,95
+CHN-RD-034,Thiruvanmiyur Main Road,Thiruvanmiyur,13,179,12.99589,80.244301,interior,bituminous,1.59,10,4,9,1.7,15.7,50.8,2.1,69,0,2859,3.6,0,0,1,14,19.9,37
+CHN-RD-035,Velachery Canal Bank Road,Velachery,13,177,12.960851,80.216905,interior,bituminous,2.93,6,1,9,3.1,6.3,38.4,3.3,76,4,4665,10.3,0,0,0,31,15.2,70
+CHN-RD-036,Anna Nagar High Road,Anna Nagar,8,101,13.075453,80.211452,interior,bituminous,2.67,13,10,9,2.8,49.1,56.6,5.1,29,22,8586,12.3,0,0,2,30,81.4,58
+CHN-RD-037,Mylapore Station Road,Mylapore,9,122,13.03976,80.274801,bus_route,bituminous,4.01,5,3,7,1.7,19.3,9.7,4.7,78,4,50069,25.4,0,1,7,1,16.2,72
+CHN-RD-038,T Nagar Market Road,T Nagar,10,135,13.030073,80.217986,interior,bituminous,3.76,7,1,5,1.7,3.5,25.5,3.1,64,5,11580,15.5,0,1,2,14,33.7,80
+CHN-RD-039,Kodambakkam Station Road,Kodambakkam,10,131,13.066774,80.219096,interior,bituminous,1.9,15,8,14,3.3,34.6,79.3,7.1,35,6,9905,10.1,0,0,5,28,48.3,82
+CHN-RD-040,Velachery High Road,Velachery,13,177,12.972964,80.226644,interior,bituminous,2.24,11,6,7,2.4,22.7,34.2,2.8,90,1,12287,7.2,0,0,1,11,4.5,78
+CHN-RD-041,Velachery Link Road,Velachery,13,178,12.974959,80.233202,bus_route,bituminous,2.01,14,1,6,1.9,28.5,34.5,6.0,82,8,21930,24.5,1,0,0,25,20.3,93
+CHN-RD-042,Kodambakkam Station Road,Kodambakkam,10,132,13.040067,80.218719,interior,bituminous,2.33,14,8,11,3.7,21.2,61.1,7.0,19,27,12686,2.4,0,1,3,45,80.2,91
+CHN-RD-043,Perambur Main Road,Perambur,6,69,13.110359,80.248632,bus_route,bituminous,6.03,2,2,2,1.7,17.3,18.5,3.2,62,7,47039,16.1,1,0,7,0,24.8,70
+CHN-RD-044,Guindy School Road,Guindy,13,170,12.996346,80.198451,interior,bituminous,2.07,16,9,19,4.1,46.1,100,9.9,16,22,4616,1.9,0,0,7,59,80.3,71
+CHN-RD-045,Perambur 2nd Avenue,Perambur,6,69,13.109246,80.220103,interior,bituminous,1.6,14,1,7,1.9,21.0,46.7,4.4,35,14,6486,13.4,0,1,4,28,61.8,74
+CHN-RD-046,Anna Nagar Canal Bank Road,Anna Nagar,8,102,13.083658,80.212055,interior,cement_concrete,2.05,15,10,8,2.6,39.6,61.2,6.5,87,7,11748,14.0,0,0,4,27,14.9,31
+CHN-RD-047,T Nagar Market Road,T Nagar,10,137,13.045324,80.244512,interior,bituminous,2.6,11,9,10,2.2,31.1,51.5,5.2,83,5,10292,15.3,0,0,3,20,24.0,69
+CHN-RD-048,Anna Nagar Canal Bank Road,Anna Nagar,8,102,13.067656,80.203219,interior,paver_block,1.68,9,9,7,1,40.4,47.6,4.7,60,5,4963,5.9,0,1,4,21,32.7,92
+CHN-RD-049,Mylapore 1st Street,Mylapore,9,123,13.037881,80.278786,collector,cement_concrete,2.86,5,1,6,1.1,18.0,31.0,2.9,79,8,18692,20.1,0,1,4,15,30.8,88
+CHN-RD-050,Adyar Canal Bank Road,Adyar,13,173,12.998962,80.267072,interior,bituminous,3.14,16,3,5,1,28.7,52.8,5.8,93,6,8526,10.9,0,0,3,6,14.3,33
+CHN-RD-051,Kodambakkam Link Road,Kodambakkam,10,133,13.051288,80.229653,interior,cement_concrete,3.62,8,7,8,2.0,51.8,43.4,5.0,61,5,8227,12.6,0,0,0,21,26.0,80
+CHN-RD-052,T Nagar Market Road,T Nagar,10,135,13.044344,80.222843,interior,bituminous,2.24,17,6,6,1.4,42.2,54.4,6.1,43,12,4321,1,0,0,2,15,54.0,57
+CHN-RD-053,Kodambakkam Market Road,Kodambakkam,10,133,13.040703,80.235549,collector,bituminous,4.66,18,7,18,4.3,55.9,100,8.8,26,17,24405,18.5,0,1,11,56,72.0,99
+CHN-RD-054,Nungambakkam School Road,Nungambakkam,9,110,13.065659,80.256707,interior,bituminous,0.82,15,0,5,2.7,30.4,27.4,5.8,30,6,7307,7.8,0,1,6,16,52.6,88
+CHN-RD-055,Velachery School Road,Velachery,13,177,12.980621,80.231193,interior,bituminous,3.54,17,4,6,2.9,28.0,63.9,6.1,74,2,3853,1,0,0,3,17,16.7,65
+CHN-RD-056,Royapuram 2nd Avenue,Royapuram,5,48,13.130279,80.278333,bus_route,bituminous,5.58,1,0,3,2.8,11.1,34.1,3.5,19,29,20280,11.7,0,1,0,16,92.1,87
+CHN-RD-057,Kodambakkam Link Road,Kodambakkam,10,133,13.059944,80.232708,interior,bituminous,1.25,9,7,2,1,32.6,43.3,5.1,36,7,6015,25.3,0,0,0,3,47.2,57
+CHN-RD-058,Mylapore High Road,Mylapore,9,122,13.050906,80.274824,interior,bituminous,1.04,12,8,12,2.0,64.4,73.7,7.7,17,23,10594,13.5,0,0,5,38,81.0,72
+CHN-RD-059,Royapuram Canal Bank Road,Royapuram,5,48,13.113793,80.283471,interior,cement_concrete,3.21,18,9,14,2.2,55.9,100,10.0,22,8,4614,1,0,1,9,44,51.7,90
+CHN-RD-060,Velachery Main Road,Velachery,13,176,12.973426,80.220133,interior,bituminous,3.46,11,9,6,1.6,20.1,40.4,6.3,86,4,3174,13.8,0,1,0,12,10.0,71
+CHN-RD-061,Perambur Market Road,Perambur,6,69,13.130472,80.232538,interior,bituminous,1.45,12,6,6,3.2,31.9,51.9,5.9,24,12,4642,19.3,0,0,0,7,67.4,61
+CHN-RD-062,Thiruvanmiyur High Road,Thiruvanmiyur,13,179,12.985653,80.270619,arterial,bituminous,3.86,15,3,7,2.9,29.2,52.5,5.4,71,7,33312,16.6,1,1,0,15,28.3,83
+CHN-RD-063,Perambur 2nd Avenue,Perambur,6,71,13.115109,80.244418,bus_route,bituminous,3.86,22,12,17,4.9,68.3,100,10.0,25,24,27454,20.4,0,1,4,59,73.9,98
+CHN-RD-064,Nungambakkam Market Road,Nungambakkam,9,110,13.044352,80.249358,bus_route,bituminous,3.49,4,3,3,1.2,6.1,37.5,5.0,94,3,19746,18.9,1,1,0,10,9.3,93
+CHN-RD-065,Perambur 1st Street,Perambur,6,69,13.113044,80.225346,collector,cement_concrete,5.92,2,2,3,1,20.8,46.3,3.6,32,26,25996,14.9,0,0,4,23,81.3,53
+CHN-RD-066,Guindy 1st Street,Guindy,13,169,13.022006,80.207461,arterial,bituminous,4.43,16,5,4,1.2,47.4,64.4,2.8,64,8,37987,16.8,1,0,5,12,31.7,52
+CHN-RD-067,Guindy 2nd Avenue,Guindy,13,170,13.002475,80.19983,interior,bituminous,2.37,8,0,5,1,16.3,36.0,3.9,32,15,13474,11.5,0,0,2,12,61.0,45
+CHN-RD-068,Royapuram 1st Street,Royapuram,5,48,13.107605,80.30372,bus_route,bituminous,7.12,6,3,5,1.8,18.0,29.7,3.6,76,4,44017,14.1,1,0,11,6,26.6,84
+CHN-RD-069,Nungambakkam Main Road,Nungambakkam,9,110,13.062433,80.24944,interior,bituminous,3.08,7,2,4,2.1,14.5,40.1,4.7,70,6,12509,13.9,0,0,2,7,23.4,94
+CHN-RD-070,Anna Nagar High Road,Anna Nagar,8,103,13.083083,80.217436,interior,bituminous,2.72,24,11,21,3.3,85,99.2,10.0,34,24,13809,1.5,0,0,10,69,79.5,47
+CHN-RD-071,Perambur Main Road,Perambur,6,71,13.110844,80.217229,interior,bituminous,3.46,7,2,7,1.8,24.4,38.8,2.7,87,7,5195,1.3,0,0,4,11,15.3,22
+CHN-RD-072,Nungambakkam School Road,Nungambakkam,9,111,13.043484,80.259734,interior,cement_concrete,3.57,3,3,0,1,28.4,9.4,4.4,79,6,3019,1.5,0,1,2,0,23.6,99
+CHN-RD-073,T Nagar 1st Street,T Nagar,10,137,13.025393,80.231903,collector,bituminous,5.81,14,8,11,2.4,47.9,55.4,5.3,81,4,16525,7.4,0,1,0,30,9.9,96
+CHN-RD-074,T Nagar Market Road,T Nagar,10,137,13.038788,80.221472,interior,bituminous,1.16,11,9,9,2.6,39.0,77.1,6.6,66,8,12296,3.5,0,0,1,8,38.6,68
+CHN-RD-075,Kodambakkam 1st Street,Kodambakkam,10,133,13.060475,80.227619,interior,bituminous,1.39,5,3,5,2.6,23.7,19.8,1.6,78,6,3444,16.1,0,1,4,16,24.5,97
+CHN-RD-076,Mylapore Market Road,Mylapore,9,122,13.029245,80.266601,interior,bituminous,1.08,7,1,4,1.9,24.1,19.2,4.1,74,8,10346,7.5,0,0,5,10,34.8,80
+CHN-RD-077,Adyar Link Road,Adyar,13,173,13.014631,80.257179,bus_route,cement_concrete,5.0,21,13,15,3.4,76.1,90.1,9.7,36,12,30857,12.7,1,1,10,30,58.2,87
+CHN-RD-078,Kodambakkam 2nd Avenue,Kodambakkam,10,133,13.069589,80.208117,collector,cement_concrete,4.64,3,0,5,2.1,12.0,13.5,4.1,94,2,22513,25.5,0,0,1,19,5.1,22
+CHN-RD-079,Royapuram School Road,Royapuram,5,50,13.112836,80.300323,interior,bituminous,0.97,4,4,4,3.3,26.4,26.4,4.7,91,5,4939,8.4,0,1,5,8,6.2,89
+CHN-RD-080,Anna Nagar High Road,Anna Nagar,8,102,13.072848,80.200757,interior,cement_concrete,3.06,4,4,4,1.6,36.9,31.1,3.0,89,7,3197,6.6,0,1,1,17,24.6,95
+CHN-RD-081,Tambaram School Road,Tambaram,15,198,12.934698,80.092634,bus_route,bituminous,5.94,3,2,1,1.5,8.1,6.5,1.6,75,5,46645,22.7,1,0,3,12,19.4,68
+CHN-RD-082,Anna Nagar Market Road,Anna Nagar,8,102,13.067444,80.206997,interior,bituminous,2.81,20,9,19,3.4,58.5,88.4,9.5,19,7,8883,13.4,0,1,8,39,49.4,70
+CHN-RD-083,Nungambakkam Link Road,Nungambakkam,9,110,13.039144,80.238745,collector,cement_concrete,7.37,17,2,7,1.8,28.1,38.4,5.5,85,4,21475,19.2,0,1,1,26,14.6,98
+CHN-RD-084,Tambaram Link Road,Tambaram,15,200,12.934534,80.082969,arterial,bituminous,6.39,5,2,7,3.7,18.8,32.2,2.7,33,17,50590,19.1,1,1,3,23,61.9,99
+CHN-RD-085,Nungambakkam Canal Bank Road,Nungambakkam,9,111,13.061874,80.227559,interior,bituminous,3.22,3,3,2,1.6,5.2,30.7,3.0,93,4,13526,2.0,0,1,1,0,13.3,89
+CHN-RD-086,Royapuram Station Road,Royapuram,5,48,13.106336,80.31054,bus_route,bituminous,4.88,20,13,18,3.9,73.2,88.4,9.3,33,8,24943,19.1,1,1,10,35,52.7,66
+CHN-RD-087,Nungambakkam Market Road,Nungambakkam,9,111,13.054249,80.241134,interior,cement_concrete,1.92,7,7,6,4.1,31.8,46.3,4.2,76,7,8206,2.6,0,0,0,26,20.3,42
+CHN-RD-088,Royapuram Market Road,Royapuram,5,50,13.109691,80.291532,interior,bituminous,1.84,1,0,1,1.7,22.1,24.4,1.2,89,3,9865,10.1,0,0,3,0,16.7,87
+CHN-RD-089,Mylapore Station Road,Mylapore,9,123,13.020951,80.263025,arterial,bituminous,5.74,10,9,11,3.8,38.2,61.8,6.6,34,14,50524,21.8,0,0,8,35,61.8,42
+CHN-RD-090,T Nagar High Road,T Nagar,10,137,13.027911,80.244004,arterial,cement_concrete,2.67,13,8,8,3.8,32.9,71.6,6.0,73,7,74872,22.2,1,0,8,19,27.1,83
+CHN-RD-091,Mylapore School Road,Mylapore,9,122,13.038081,80.279955,interior,cement_concrete,2.97,15,8,6,1.6,62.7,47.4,6.0,60,3,6080,1,0,0,5,15,31.8,95
+CHN-RD-092,T Nagar 2nd Avenue,T Nagar,10,137,13.038712,80.232372,bus_route,bituminous,2.51,10,4,10,3.2,20.0,68.2,2.6,63,2,51712,17.0,1,0,5,26,19.5,70
+CHN-RD-093,Anna Nagar Market Road,Anna Nagar,8,103,13.087806,80.212481,interior,bituminous,2.75,12,7,7,2.0,20.0,44.3,4.1,59,1,10496,9.7,0,0,0,26,24.1,61
+CHN-RD-094,Mylapore 1st Street,Mylapore,9,123,13.039497,80.277033,arterial,bituminous,5.26,15,0,8,2.8,39.1,57.0,6.2,20,18,59918,26.6,1,1,3,33,66.1,84
+CHN-RD-095,Thiruvanmiyur Link Road,Thiruvanmiyur,13,179,12.980143,80.25077,interior,bituminous,2.14,15,0,9,3.5,27.7,42.0,4.0,75,7,2632,4.6,0,1,4,15,30.9,65
+CHN-RD-096,Tambaram Canal Bank Road,Tambaram,15,198,12.933822,80.09264,bus_route,bituminous,6.88,5,0,3,2.0,24.9,26.2,4.8,93,2,41038,14.9,1,0,9,19,13.1,46
+CHN-RD-097,Adyar School Road,Adyar,13,175,12.999014,80.265255,interior,bituminous,2.07,19,8,12,2.8,66.6,79.8,9.3,20,9,11155,9.2,0,1,0,31,51.5,68
+CHN-RD-098,Tambaram High Road,Tambaram,15,199,12.928943,80.083981,bus_route,bituminous,5.2,14,8,18,2.4,63.6,78.0,7.7,35,30,51508,17.1,1,1,8,54,89.3,92
+CHN-RD-099,Royapuram Station Road,Royapuram,5,49,13.114088,80.279396,bus_route,cement_concrete,5.71,12,10,18,4.1,64.4,85.1,10.0,39,16,34990,22.4,1,0,7,42,55.4,93
+CHN-RD-100,Velachery Market Road,Velachery,13,177,12.987336,80.223275,interior,bituminous,0.71,4,1,1,1,32.3,45.0,6.6,16,20,10836,1,0,0,0,13,75.3,73
